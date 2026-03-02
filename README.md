@@ -57,7 +57,6 @@ Airbnb-Clone/
 
 ## 💡 Future Improvements
 
-- User Authentication 
 - Property Booking System
 - Payment Integration
 - Reviews & Ratings
