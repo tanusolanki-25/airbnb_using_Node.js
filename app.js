@@ -18,7 +18,7 @@ app.use(express.static(path.join(rootDir,'public')))
  
 app.use(errorController.errorPage)
 
-const PORT = 30001;
+const PORT = process.env.PORT
 app.listen(PORT,()=>{
   console.log(`server is running at http://localhost:${PORT}/`)
 })
