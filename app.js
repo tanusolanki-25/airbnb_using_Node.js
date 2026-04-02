@@ -5,6 +5,7 @@ const storeRouter = require('./routes/storeRouter')
 const hostRouter = require('./routes/hostRouter')
 const rootDir = require('./utils/pathUtils')
 const errorController = require('./controllers/errors')
+require('dotenv').config();
 
 const app = express();
 app.set('view engine','ejs')

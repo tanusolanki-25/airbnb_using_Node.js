@@ -12,7 +12,6 @@ Home.findById(homeId, home =>{
    if(!home){
     return res.redirect("/host/host-home-list")
    }
-console.log(homeId, editing, home)
 res.render('host/edit-Home',{
    home: home, 
    pageTitle: 'Edit your home',
@@ -36,7 +35,6 @@ res.redirect('/host/host-home-list')
 }
 
 exports.postEditHome = (req,res,next)=>{
-console.log(req.body,req.body.price)
 const{id,houseName, price, location, rating, photoUrl} = req.body;
 
 const home = new Home(houseName, price, location, rating, photoUrl)

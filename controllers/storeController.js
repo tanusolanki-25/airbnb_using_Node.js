@@ -19,7 +19,6 @@ exports.getFavouriteList = (req,res,next)=>{
    Favourite.getFavourite(favourites =>{
       Home.fetchAll((registeredHomes) =>{
          const favouriteHome = favourites.map(homeId => registeredHomes.find(home => home.id === homeId))
-         console.log(favouriteHome)
          res.render('store/favourite-list',{favouriteHome: favouriteHome,  pageTitle: 'My Favourite List'
       ,currentPage: 'Favourite List'})
    })
@@ -28,7 +27,6 @@ exports.getFavouriteList = (req,res,next)=>{
 }
 
 exports.postAddTOFavourite = (req,res,next)=>{
-   console.log(req.body)
    Favourite.addToFavourite(req.body.id, err =>{
       if(err){
          console.log(err)

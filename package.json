@@ -17,6 +17,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "body-parser": "^2.2.2",
+    "dotenv": "^17.4.0",
     "ejs": "^4.0.1",
     "express": "^5.2.1",
     "tailwindcss": "^4.1.18"
